@@ -1,19 +1,37 @@
 
 <h1>HOLA MUNDO</h1>
 
+
+
+<h3>Test</h3>
 {{title}}
-
-
 <input type="text" [(ngModel)]= "title">
 
 <br>
 <button (click)=HacerCambios()>Cambiar algo</button>
+<br>
+
+<div ej1>
+<h3>EJ 1</h3>
+<h4>edad UNO</h4>
+<input type="number" [(ngModel)]= "edadUno">
+<br>
+<h4>edad DOS</h4>
+<input type="number" [(ngModel)]= "edadDos">
+<br>
 
 
 
+<h4>La suma es: {{resultadoSuma}}</h4>
+
+<h4>El promedio es: {{resultadoPromedio}}</h4>
+
+<br>
+<button (click)=SumaEdades() (click)=PromedioEdades()>Calcular</button>
+<button (click)=Limpiar()>Limpiar</button>
+<br>
+</div>
 
 
 
 <router-outlet></router-outlet>
-
-<footer> a 21</footer>

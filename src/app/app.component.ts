@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'primerapp';
+  edadUno= '';
+  edadDos= '';
+  resultadoSuma = 0;
+  resultadoPromedio = 0;
 
 
   HacerCambios()
@@ -15,10 +19,24 @@ export class AppComponent {
 
   }
 
-  sumaEdades()
+  SumaEdades()
   {
     
+    this.resultadoSuma =  parseInt(this.edadUno) + parseInt(this.edadDos);
 
+  }
+
+  PromedioEdades()
+  {
+  
+    this.resultadoPromedio = this.resultadoSuma / 2;
+
+  }
+
+  Limpiar()
+  {
+    
+  
 
   }
 
