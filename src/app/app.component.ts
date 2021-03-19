@@ -7,37 +7,51 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'primerapp';
-  edadUno= '';
-  edadDos= '';
+  edadUno = '';
+  edadDos = '';
   resultadoSuma = 0;
   resultadoPromedio = 0;
 
 
-  HacerCambios()
-  {
+  HacerCambios() {
     this.title = "cambio a angular 2021";
 
   }
 
-  SumaEdades()
-  {
-    
-    this.resultadoSuma =  parseInt(this.edadUno) + parseInt(this.edadDos);
+  SumaEdades() {
+
+    this.resultadoSuma = parseInt(this.edadUno) + parseInt(this.edadDos);
 
   }
 
-  PromedioEdades()
-  {
-  
+  PromedioEdades() {
+
     this.resultadoPromedio = this.resultadoSuma / 2;
 
   }
 
-  Limpiar()
-  {
-    
-  
+  Limpiar() {
+    this.edadUno = '';
+    this.edadDos = '';
+    this.resultadoSuma = 0;
+    this.resultadoPromedio = 0;
 
   }
 
 }
+
+export class Usuario {
+
+  public nombre: string;
+  public clave: string;
+
+  public constructor() {
+    this.nombre = '';
+    this.clave = '';
+
+  }
+
+
+
+}
+
